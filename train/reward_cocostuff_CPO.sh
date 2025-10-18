@@ -4,9 +4,6 @@ export CONTROLNET_DIR="/lustre/fs1/home/zo258499/Control-Anything/reward_control
 export REWARDMODEL_DIR="mmseg::deeplabv3/deeplabv3_r50-d8_4xb4-160k_coco-stuff164k-512x512.py"
 export OUTPUT_DIR="work_dirs/DPO/Captioned_COCOStuff/controlnet_sd15"
 
-export WANDB_API_KEY="1e760e873296ed92c0da49fd97631c780d221f9f"
-wandb login --relogin $WANDB_API_KEY
-
 
 accelerate launch --config_file "train/config.yml" \
  --main_process_port=23156 train/reward_CPO.py \
