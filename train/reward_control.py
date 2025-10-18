@@ -54,7 +54,7 @@ except ImportError:
 import diffusers
 from diffusers import (
     AutoencoderKL,
-    #ControlNetModel,
+    #ControlNetModel, ## this is for original ControlNet
     DDPMScheduler,
     StableDiffusionControlNetPipeline,
     UNet2DConditionModel,
@@ -64,7 +64,7 @@ from diffusers import (
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from controlnets.controlnet import ControlNetModel
+from controlnets.controlnet import ControlNetModel ## for ControlNet with DINO adapter
 
 
 from diffusers.training_utils import EMAModel
