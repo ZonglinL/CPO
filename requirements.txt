@@ -1,0 +1,16 @@
+diffusers==0.34.0
+datasets==3.3.2
+transformers==4.49.0
+tensorboard==2.19.0
+huggingface_hub==0.29.1
+ftfy==6.3.1
+kornia==0.8.0
+accelerate==1.7.0
+git+https://github.com/openai/CLIP.git
+# git+https://github.com/facebookresearch/xformers.git@main#egg=xformers
+openmim==0.3.0
+torchmetrics==1.6.1
+torch-fidelity==0.3.0
+sentencepiece==0.2.0
+requests==2.32.3
+tqdm==4.67.1
