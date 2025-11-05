@@ -26,22 +26,34 @@ bash ./prepare_env.sh
 
 #### Original ControlNet
 
-First, download ControlNet++ ```download_controlnetpp.py```
 
-Second, finetune original ControlNet with```train/reward_control_original.py``` for Pose only (```train/train_pose.sh``` for script)
+```bash
+python download_controlnetpp.py ## download ControlNet++ 
+sh train/train_pose.sh ## finetune original ControlNet only for pose.
+sh train/reward_[task_name]_CPO.sh ## train CPO
 
-Finally, train CPO with ```train/reward_CPO.py``` (```train/reward_[task_name]_CPO.sh``` for training script)
+```
+
 
 #### ControlNet with DINO adapter
 
-First, finetune ControlNet with DINO adapter with ```train/reward_DINO.py``` (```train/reward_[task_name].sh``` for training script)
+```bash
+sh train/reward_[task_name].sh ## use train/reward_DINO.py for dino adapter finetuning in the script.
+# If you want to add ControlNet++ training, you can switch to train/reward_control.py and resume pretrained ckpt.
+# reward_control.py is currently default to ControlNet-DINO. If you want to train ControlNet++ please import ControlNetModel from diffusers
 
-Second (optional), train ContolNet++ with DINO adapter with ```train/reward_control.py```. You will need to import ```ControlNetModel``` from ```controlnets/``` istead of ```diffusers```. This can be done in ```train/reward_[task_name].sh```.
 
-Finally, train CPO after your pretrained models with  ```train/reward_CPO_DINO.py``` (```train/reward_[task_name]_CPO_DINO.sh``` for training script)
+sh train/reward_[task_name]_CPO_DINO.sh ## train CPO for ControlNet-DINO
+
+```
+
 
 ### Evaluation
 
-See``` eval/eval_{task}.sh```. You need to switch eval.py to eval_dino.py when you want to evaluate the ControlNet-Dino.
+```bash
+eval/eval_{task}.sh # You need to switch eval.py to eval_dino.py when you want to evaluate the ControlNet-Dino.
+eval/eval_{task}_flux_cpo.sh # We currently only support Lineart FLUX-ControlNet. 
+```
 
+## Model Checkpoints
 
