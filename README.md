@@ -57,3 +57,11 @@ eval/eval_{task}_flux_cpo.sh # We currently only support Lineart FLUX-ControlNet
 
 ## Model Checkpoints
 
+
+|Model| Lineart | Canny | Hed | Depth | Seg (ADE20K) | Seg (CoCo) | Pose |
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| ControlNet |  [link](https://huggingface.co/ucfzl/ControlNet_Lineart_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_Canny_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_Hed_CPO) |  [link](https://huggingface.co/ucfzl/ControlNet_Depth_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_segmentation_ADE20K_CPO) |[link](https://huggingface.co/ucfzl/ControlNet_segmentation_COCOStuff_CPO) |[link](https://huggingface.co/ucfzl/ControlNet_Pose_CPO) |
+| ControlNet-DINO |  [link](https://huggingface.co/ucfzl/ControlNet_DINO_Lineart_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_DINO_Canny_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_DINO_Hed_CPO) |  [link](https://huggingface.co/ucfzl/ControlNet_DINO_Depth_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_DINO_segmentation_ADE20K_CPO) |[link](https://huggingface.co/ucfzl/ControlNet_DINO_segmentation_COCOStuff_CPO) |[link](https://huggingface.co/ucfzl/ControlNet_DINO_Pose_CPO) |
+| ControlNet-FLUX |  [link](https://huggingface.co/ucfzl/FLUX_Lineart_CPO) | - | - |  - | - |- |- |
+
+
