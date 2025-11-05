@@ -39,3 +39,9 @@ First, finetune ControlNet with DINO adapter with ```train/reward_DINO.py``` (``
 Second (optional), train ContolNet++ with DINO adapter with ```train/reward_control.py```. You will need to import ```ControlNetModel``` from ```controlnets/``` istead of ```diffusers```. This can be done in ```train/reward_[task_name].sh```.
 
 Finally, train CPO after your pretrained models with  ```train/reward_CPO_DINO.py``` (```train/reward_[task_name]_CPO_DINO.sh``` for training script)
+
+### Evaluation
+
+See``` eval/eval_{task}.sh```. You need to switch eval.py to eval_dino.py when you want to evaluate the ControlNet-Dino.
+
+
