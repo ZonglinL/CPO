@@ -3,7 +3,7 @@
 
   [Zonglin Lyu](https://zonglinl.github.io/), [Ming Li](https://liming-ai.github.io/), [Xinxin Liu](https://openreview.net/profile?id=~Xinxin_Liu4), [Chen Chen](https://www.crcv.ucf.edu/chenchen/)
 
-  [![Website shields.io](https://img.shields.io/website?url=http%3A//poco.is.tue.mpg.de)](https://zonglinl.github.io/cpo_page/) [![YouTube Badge](https://img.shields.io/badge/YouTube-Watch-red?style=flat-square&logo=youtube)](https://youtu.be/r6jX43e1EGI)  [![arXiv](https://img.shields.io/badge/arXiv-2507.04984-00ff00.svg)](TODO)
+  [![Website shields.io](https://img.shields.io/website?url=http%3A//poco.is.tue.mpg.de)](https://zonglinl.github.io/CPO_page/) [![YouTube Badge](https://img.shields.io/badge/YouTube-Watch-red?style=flat-square&logo=youtube)](https://youtu.be/r6jX43e1EGI)  [![arXiv](https://img.shields.io/badge/arXiv-2507.04984-00ff00.svg)](TODO)
   
 </div>
 ## Environment setup
