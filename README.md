@@ -8,6 +8,47 @@
 </div>
 
 
+<p align="center">
+<img src="images/Teaser.png" width=95%>
+<p>
+
+## Overview
+We introduce Condition Preference Optimization to directly contrasting input conditions instead of raw images for controllable image generation task.
+
+<p align="center">
+<img src="images/overview.png" width=95%>
+<p>
+
+## Quantitative Results
+Our method achieves state-of-the-art performance in controllability among all recent SOTAs and does not introduce noise to image quality during training. 
+<p align="center">
+<img src="images/Controllability.png" width=95%>
+<p>
+
+<p align="center">
+<img src="images/FID.png" width=95%>
+<p>
+
+
+We employ the DINO-v2 adapter proposed in ControlAR and reveals that it is beneficial to ControlNet-based methods in both controllability and image quality.
+<p align="center">
+<img src="images/DINO-Controllability.png" width=95%>
+<p>
+
+<p align="center">
+<img src="images/DINO-FID.png" width=95%>
+<p>
+
+
+## Qualitative Results
+Our method achieves the best qualitative visualization.
+<p align="center">
+<img src="images/Qual1.png" width=95%>
+<p>
+
+For more visualizations, please refer to our <a href="https://zonglinl.github.io/CPO_page/">project page</a>.
+
+
 ## Environment setup
 
 ```bash
@@ -63,5 +104,19 @@ eval/eval_{task}_flux_cpo.sh # We currently only support Lineart FLUX-ControlNet
 | ControlNet |  [link](https://huggingface.co/ucfzl/ControlNet_Lineart_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_Canny_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_Hed_CPO) |  [link](https://huggingface.co/ucfzl/ControlNet_Depth_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_segmentation_ADE20K_CPO) |[link](https://huggingface.co/ucfzl/ControlNet_segmentation_COCOStuff_CPO) |[link](https://huggingface.co/ucfzl/ControlNet_Pose_CPO) |
 | ControlNet-DINO |  [link](https://huggingface.co/ucfzl/ControlNet_DINO_Lineart_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_DINO_Canny_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_DINO_Hed_CPO) |  [link](https://huggingface.co/ucfzl/ControlNet_DINO_Depth_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_DINO_segmentation_ADE20K_CPO) |[link](https://huggingface.co/ucfzl/ControlNet_DINO_segmentation_COCOStuff_CPO) |[link](https://huggingface.co/ucfzl/ControlNet_DINO_Pose_CPO) |
 | ControlNet-FLUX |  [link](https://huggingface.co/ucfzl/FLUX_Lineart_CPO) | - | - |  - | - |- |- |
+
+## Citation
+
+If our work is helpful, please cite
+```
+@inproceedings{
+lyu2025cpo,
+title={{CPO}: Condition Preference Optimization for Controllable Image Generation},
+author={Zonglin Lyu and Ming Li and Xinxin Liu and Chen Chen},
+booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+year={2025}
+}
+```
+
 
 
