@@ -81,7 +81,7 @@ sh train/reward_[task_name]_CPO.sh ## train CPO
 ```bash
 sh train/reward_[task_name].sh ## use train/reward_DINO.py for dino adapter finetuning in the script.
 # If you want to add ControlNet++ training, you can switch to train/reward_control.py and resume pretrained ckpt.
-# reward_control.py is currently default to ControlNet-DINO. If you want to train ControlNet++ please import ControlNetModel from diffusers
+# reward_control.py is currently default to ControlNet-DINO. If you want to train original ControlNet++ please import ControlNetModel from diffusers
 
 
 sh train/reward_[task_name]_CPO_DINO.sh ## train CPO for ControlNet-DINO
