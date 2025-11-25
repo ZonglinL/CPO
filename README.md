@@ -105,6 +105,19 @@ eval/eval_{task}_flux_cpo.sh # We currently only support Lineart FLUX-ControlNet
 | ControlNet-DINO |  [link](https://huggingface.co/ucfzl/ControlNet_DINO_Lineart_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_DINO_Canny_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_DINO_Hed_CPO) |  [link](https://huggingface.co/ucfzl/ControlNet_DINO_Depth_CPO) | [link](https://huggingface.co/ucfzl/ControlNet_DINO_segmentation_ADE20K_CPO) |[link](https://huggingface.co/ucfzl/ControlNet_DINO_segmentation_COCOStuff_CPO) |[link](https://huggingface.co/ucfzl/ControlNet_DINO_Pose_CPO) |
 | ControlNet-FLUX |  [link](https://huggingface.co/ucfzl/FLUX_Lineart_CPO) | - | - |  - | - |- |- |
 
+## Dataset
+
+CoCoPose: [link](https://huggingface.co/datasets/ucfzl/Pose_Reward_DPO_cond)
+
+ADE20K: [link](https://huggingface.co/datasets/ucfzl/Segmentation_Reward_DPO_cond)
+
+COCOStuff: [link](https://huggingface.co/datasets/ucfzl/COCOstuff)
+
+Mutligen20M: [link](https://huggingface.co/datasets/ucfzl/MultiGen_Reward_DPO_cond)
+
+
+if you have disk quota constraint, you can download Mutigen20M directly with CLI. Download with provided script automatically need space to cache.
+
 ## Citation
 
 If our work is helpful, please cite
